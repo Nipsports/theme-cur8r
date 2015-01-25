@@ -71,12 +71,11 @@
       <div class="post-wrapper">
 
         {% if is_tag %}
-        <h4 class="tag-header">Showing all posts tagged as {{ tag }}:</h4>
+        <h4 class="tag-header">Tous les articles {{ tag }}:</h4>
         {% endif %}
-
+        <h1>Derniers articles</h1>
         {% for post in posts %}
         <div class="post-fragment">
-        <h1>Derniers articles</h1>
           {% if post.photos %}
           {% for photo in post.photos %}
           {% if loop.index == 1 %}
